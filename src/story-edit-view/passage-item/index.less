@@ -4,7 +4,7 @@
 
 #storyEditView .passage {
 	position: absolute;
-	background: @color-paper;
+	background: @color-pink;
 	cursor: default;
 	font-size: 85%;
 	padding: @len-small;
@@ -23,12 +23,6 @@
 		font-weight: bold;
 	}
 
-	.excerpt {
-		position: relative;
-		z-index: 1;
-		color: lighten(@color-text, 45%);
-	}
-
 	.tags {
 		position: absolute;
 		z-index: 2;
@@ -44,7 +38,7 @@
 			flex-shrink: 1;
 			margin: @len-hairline;
 			border-radius: (@len-small * 0.75) / 2;
-			
+
 			& + div {
 				margin-top: 0;
 			}
@@ -116,10 +110,6 @@
 			margin: 0 auto;
 		}
 	}
-
-	.excerpt {
-		display: none;
-	}
 }
 
 #storyEditView.zoom-small .passage {
@@ -140,7 +130,7 @@
 		}
 	}
 
-	.title .text, .excerpt {
+	.title .text {
 		display: none;
 	}
 }
