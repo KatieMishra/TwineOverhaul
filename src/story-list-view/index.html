@@ -7,7 +7,8 @@
 
 	<file-drag-n-drop>{{ 'Drop a story file to import' | say}}</file-drag-n-drop>
 
-	<list-toolbar></list-toolbar>
+	<!-- <list-toolbar></list-toolbar> -->
+	<story-toolbar :story="story" :highlight-regexp="highlightRegexp" :zoom-desc="zoomDesc" ></story-toolbar>
 
 	<header>
 		<h1>{{ storyCountDesc }}</h1>
